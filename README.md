@@ -2,6 +2,8 @@
 # World Religion Data Visualization
 
 Visualization of the World Religion Data dataset by Correlates of War Project.
+Mostly personal project to famirialize with Jupyter Notebook and Data Science concepts in general.
+See the [Jupyter Notebook file](index.ipynb).
 
 ## Roadmap
 
