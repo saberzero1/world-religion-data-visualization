@@ -6,8 +6,7 @@ Visualization of the World Religion Data dataset by Correlates of War Project.
 ## Roadmap
 
  - [ ] Determine metrics
- - [x] Determine presenation format (probably html/web based)
- - [x] Set up MySQL database
+ - [x] Determine presenation format
  - [ ] Create queries to retrieve data
  - [ ] Retrieve data to visualize
  - [x] Create presentation format
