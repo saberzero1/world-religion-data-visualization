@@ -1,9 +1,10 @@
-﻿import pandas as pd
+﻿from __future__ import print_function
+
+import pandas as pd
 import pyodbc
 import matplotlib.pyplot as plt
 import numpy as np
 
-from __future__ import print_function
 from ipywidgets import interact, interactive, fixed, interact_manual
 import ipywidgets as widgets
 from IPython.display import display
