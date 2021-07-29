@@ -1,8 +1,8 @@
 ﻿from __future__ import print_function
 
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
 
 from ipywidgets import interact, interactive, fixed, interact_manual
 import ipywidgets as widgets
