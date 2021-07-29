@@ -1,10 +1,7 @@
-﻿from __future__ import print_function
-
-import numpy as np
+﻿import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from ipywidgets import interact, interactive, fixed, interact_manual
 import ipywidgets as widgets
 from IPython.display import display
 
