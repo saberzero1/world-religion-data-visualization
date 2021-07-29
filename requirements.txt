@@ -1,5 +1,5 @@
 pandas
-pyodbc
+pyodbc -f https://pypi.org/project/pyodbc/
 matplotlib
 numpy
 ipywidgets
