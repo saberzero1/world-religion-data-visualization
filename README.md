@@ -7,11 +7,12 @@ See the [Jupyter Notebook file](index.ipynb).
 
 ## Roadmap
 
- - [x] Determine presenation format
- - [x] Create presentation format
- - [ ] Create queries to retrieve data
- - [ ] Retrieve data to visualize
- - [ ] Visualize data
+ - [x] Determine presenation format.
+ - [x] Create presentation format.
+ - [ ] Create queries to retrieve data.
+ - [ ] Retrieve data to visualize.
+ - [ ] Visualize data.
+ - [ ] Make this readme awesome.
 
 ## Acknowledgements
 
