@@ -1,7 +1,6 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/saberzero1/world-religion-data-visualization/HEAD?filepath=index.ipynb)
 
 # World Religion Data Visualization
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/saberzero1/world-religion-data-visualization/HEAD?urlpath=https%3A%2F%2Fgithub.com%2Fsaberzero1%2Fworld-religion-data-visualization%2Fblob%2Fmain%2Findex.ipynb)
 
 Visualization of the World Religion Data dataset by Correlates of War Project.
 Mostly personal project to famirialize with Jupyter Notebook and Data Science concepts.
