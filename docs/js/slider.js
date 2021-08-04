@@ -6,11 +6,14 @@ outputChrstCount.innerHTML = sliderChrstCount.value;
 valChrstCount.innerHTML = sliderChrstCount.value;
 
 sliderChrstCount.oninput = function() {
-var container = outputChrstCount;
-valChrstCount.innerHTML = this.value;
-container.src = "graphics/christianity/percent/christianity_map_" + this.value + "_percent.html";
-var content = container.innerHTML;
-comtainer.innerHTML = content;
+    valChrstCount.innerHTML = this.value;
+    tablinks = document.getElementsByClassName("display");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    document.getElementById('"' + this.value + '"').style.display = "block";
+    evt.currentTarget.className += " active";
 }
 
 // Range for Christianity percent
