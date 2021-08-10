@@ -28,11 +28,6 @@
             World Religion Data Visualization
         </h1>
         <hr>
-        <pre>
-            <code class="language-python">
-def f(x)
-return x</code>
-        </pre>
 
         <p>
             This page is work in progress.
@@ -44,10 +39,10 @@ return x</code>
         <hr>
 
         <p>
-            Code to get the figure below:
-        </p>
-
-        <pre>
+            <details>
+                <summary>Click here to see the code to get the figure below</summary>
+                <br>
+                <pre>
 <code class="language-python">def f(x):
     national_stats_highest = national_stats[["chrstgenpct", "judgenpct", "islmgenpct", "budgenpct", "hindgenpct", "zorogenpct", "hindgenpct", "sikhgenpct", "shntgenpct", "bahgenpct", "taogenpct", "jaingenpct", "confgenpct", "syncgenpct", "anmgenpct", "nonreligpct", "othrgenpct"]]
     max_value_national_inter = national_stats_highest.idxmax(axis=1, skipna=True)
@@ -63,7 +58,9 @@ return x</code>
     fig.show()
 w = widgets.interactive(f, x=widgets.IntSlider(min=1945, max=2010, step=5, value=2000, description="Year:"));
 display(w)</code>
-        </pre>
+                </pre>
+            </details>
+        </p>
 
         <!-- Tab links -->
         <div class="tab">
