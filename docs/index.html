@@ -84,17 +84,25 @@ print("Finished generating distribution charts.")</code>
                 <summary>Click here to see the code to get the figure below.</summary>
                 <br>
                 <pre>
-<code class="language-python">def f(x):
-    national_stats_highest = national_stats[["chrstgenpct", "judgenpct", "islmgenpct", "budgenpct", "hindgenpct", "zorogenpct", "hindgenpct", "sikhgenpct", "shntgenpct", "bahgenpct", "taogenpct", "jaingenpct", "confgenpct", "syncgenpct", "anmgenpct", "nonreligpct", "othrgenpct"]]
+<code class="language-python">def customLegend(fig, nameSwap):
+    for i, dat in enumerate(fig.data):
+        for elem in dat:
+            if elem == 'name':
+                fig.data[i].name = nameSwap[fig.data[i].name]
+    return(fig)
+def f(x):
+    national_stats_highest = national_stats[["chrstgenpct", "judgenpct", "islmgenpct", "budgenpct", "hindgenpct", "zorogenpct", "sikhgenpct", "shntgenpct", "bahgenpct", "taogenpct", "jaingenpct", "confgenpct", "syncgenpct", "anmgenpct", "nonreligpct", "othrgenpct"]]
     max_value_national_inter = national_stats_highest.idxmax(axis=1, skipna=True)
     max_value_national = pd.concat([national_stats, max_value_national_inter], axis=1, join="inner").rename(columns={0:"Largest religion"}).sort_values("Largest religion").query("year==@x")
     max_value_national
     fig = px.choropleth(max_value_national, locations="ISO",
                         color="Largest religion",
                         hover_name="StateAbb",
-                        hover_data=["chrstgenpct", "judgenpct", "islmgenpct", "budgenpct", "hindgenpct", "zorogenpct", "hindgenpct", "sikhgenpct", "shntgenpct", "bahgenpct", "taogenpct", "jaingenpct", "confgenpct", "syncgenpct", "anmgenpct", "nonreligpct", "othrgenpct"],
+                        hover_data=["chrstgenpct", "judgenpct", "islmgenpct", "budgenpct", "hindgenpct", "zorogenpct", "sikhgenpct", "shntgenpct", "bahgenpct", "taogenpct", "jaingenpct", "confgenpct", "syncgenpct", "anmgenpct", "nonreligpct", "othrgenpct"],
                         color_continuous_scale=px.colors.sequential.YlGnBu,
-                        width=1000, height=500)
+                        width=1000, height=500,
+                        labels={"chrstgenpct": "Christianity", "judgenpct": "Judaism", "islmgenpct": "Islam", "budgenpct": "Buddhism", "hindgenpct": "Hinduism", "zorogenpct": "Zoroastrianism", "sikhgenpct": "Sikhism", "shntgenpct": "Shinto", "bahgenpct": "Baháʼí Faith", "taogenpct": "Taoism", "jaingenpct": "Jainism", "confgenpct": "Confucianism", "syncgenpct": "Syncretic Religions", "anmgenpct": "Animist", "nonreligpct": "Non-Religious", "othrgenpct": "Others"})
+    fig = customLegend(fig=fig, nameSwap = {"chrstgenpct": "Christianity", "judgenpct": "Judaism", "islmgenpct": "Islam", "budgenpct": "Buddhism", "hindgenpct": "Hinduism", "zorogenpct": "Zoroastrianism", "sikhgenpct": "Sikhism", "shntgenpct": "Shinto", "bahgenpct": "Baháʼí Faith", "taogenpct": "Taoism", "jaingenpct": "Jainism", "confgenpct": "Confucianism", "syncgenpct": "Syncretic Religions", "anmgenpct": "Animist", "nonreligpct": "Non-Religious", "othrgenpct": "Others"})
     # pxoff.plot(fig, filename=f"largest_map_{x}.html")
     fig.show()
 w = widgets.interactive(f, x=widgets.IntSlider(min=1945, max=2010, step=5, value=2000, description="Year:"));
