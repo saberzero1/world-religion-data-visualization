@@ -196,7 +196,18 @@ display(w)</code>
                 <summary>Click here to see the code to get the figure below.</summary>
                 <br>
                 <pre>
-<code class="language-python"></code>
+<code class="language-python">def f(x):
+    global_all_christianity_map = national_stats[["year", "ISO", "StateAbb", "chrstgen"]].query("year==@x")
+    global_all_christianity_map
+    fig = px.choropleth(global_all_christianity_map, locations="ISO",
+                        color="chrstgen",
+                        hover_name="StateAbb",
+                        color_continuous_scale=px.colors.sequential.YlGnBu,
+                        width=1000, height=500)
+    # pxoff.plot(fig, filename=f"christianity_map_{x}.html")
+    fig.show()
+w = widgets.interactive(f, x=widgets.IntSlider(min=1945, max=2010, step=5, value=2000, description="Year:"));
+display(w)</code>
                 </pre>
             </details>
         </p>
@@ -285,7 +296,18 @@ display(w)</code>
                 <summary>Click here to see the code to get the figure below.</summary>
                 <br>
                 <pre>
-<code class="language-python"></code>
+<code class="language-python">def f(x):
+    global_all_christianity_map = national_stats[["year", "ISO", "StateAbb", "chrstgenpct"]].query("year==@x")
+    global_all_christianity_map
+    fig = px.choropleth(global_all_christianity_map, locations="ISO",
+                        color="chrstgenpct",
+                        hover_name="StateAbb",
+                        color_continuous_scale=px.colors.sequential.YlGnBu,
+                        width=1000, height=500)
+    # pxoff.plot(fig, filename=f"christianity_map_{x}_percent.html")
+    fig.show()
+w = widgets.interactive(f, x=widgets.IntSlider(min=1945, max=2010, step=5, value=2000, description="Year:"));
+display(w)</code>
                 </pre>
             </details>
         </p>
