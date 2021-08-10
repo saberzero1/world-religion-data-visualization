@@ -1,770 +1,788 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/markdown.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 98%;
+            margin: 0 auto;
+            padding: 45px;
+        }
+    
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
     <meta charset="utf-8" />
 </head>
 <body>
-    <h1>
-        World Religion Data Visualization
-    </h1>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <h2>
-        Largest religion per country by year
-    </h2>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <!-- Tab links -->
-    <div class="tab">
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1945')">1945</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1950')">1950</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1955')">1955</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1960')">1960</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1965')">1965</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1970')">1970</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1975')">1975</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1980')">1980</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1985')">1985</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1990')">1990</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1995')">1995</button>
-        <button class="tablinksGeneralLargest active" onclick="tabsGeneralLargest(event, 'general_largest_2000')">2000</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_2005')">2005</button>
-        <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_2010')">2010</button>
-    </div>
-
-    <!-- Tab content -->
-    <div id="general_largest_1945" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1945.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_1950" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1950.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_1955" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1955.html" type="text/html" width="100%" height="550">
-    </div>
-    
-    <div id="general_largest_1960" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1960.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_1965" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1965.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_1970" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1970.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_1975" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1975.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_1980" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1980.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_1985" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1985.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_1990" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1990.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_1995" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_1995.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_2000" class="tabcontentGeneralLargest" style="display: block;">
-        <embed src="graphics/general/largest/largest_map_2000.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_2005" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_2005.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="general_largest_2010" class="tabcontentGeneralLargest" style="display: none;">
-        <embed src="graphics/general/largest/largest_map_2010.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <h2>
-        Number of Christians per country by year
-    </h2>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <div class="tab">
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1945')">1945</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1950')">1950</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1955')">1955</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1960')">1960</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1965')">1965</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1970')">1970</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1975')">1975</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1980')">1980</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1985')">1985</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1990')">1990</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1995')">1995</button>
-        <button class="tablinksChrstCount active" onclick="tabsChrstCount(event, 'chrst_count_2000')">2000</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_2005')">2005</button>
-        <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_2010')">2010</button>
-    </div>
-
-    <!-- Tab content -->
-    <div id="chrst_count_1945" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1945.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_1950" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1950.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_1955" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1955.html" type="text/html" width="100%" height="550">
-    </div>
-    
-    <div id="chrst_count_1960" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1960.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_1965" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1965.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_1970" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1970.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_1975" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1975.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_1980" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1980.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_1985" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1985.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_1990" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1990.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_1995" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_1995.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_2000" class="tabcontentChrstCount" style="display: block;">
-        <embed src="graphics/christianity/count/christianity_map_2000.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_2005" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_2005.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_count_2010" class="tabcontentChrstCount" style="display: none;">
-        <embed src="graphics/christianity/count/christianity_map_2010.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <h2>
-        Percentage of Christians per country by year
-    </h2>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <div class="tab">
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1945')">1945</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1950')">1950</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1955')">1955</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1960')">1960</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1965')">1965</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1970')">1970</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1975')">1975</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1980')">1980</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1985')">1985</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1990')">1990</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1995')">1995</button>
-        <button class="tablinksChrstPercent active" onclick="tabsChrstPercent(event, 'chrst_percent_2000')">2000</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_2005')">2005</button>
-        <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_2010')">2010</button>
-    </div>
-
-    <!-- Tab content -->
-    <div id="chrst_percent_1945" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1945_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_1950" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1950_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_1955" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1955_percent.html" type="text/html" width="100%" height="550">
-    </div>
-    
-    <div id="chrst_percent_1960" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1960_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_1965" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1965_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_1970" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1970_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_1975" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1975_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_1980" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1980_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_1985" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1985_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_1990" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1990_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_1995" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_1995_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_2000" class="tabcontentChrstPercent" style="display: block;">
-        <embed src="graphics/christianity/percent/christianity_map_2000_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_2005" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_2005_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="chrst_percent_2010" class="tabcontentChrstPercent" style="display: none;">
-        <embed src="graphics/christianity/percent/christianity_map_2010_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <h2>
-        Number of Jews per country by year
-    </h2>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <!-- Tab links -->
-    <div class="tab">
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1945')">1945</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1950')">1950</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1955')">1955</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1960')">1960</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1965')">1965</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1970')">1970</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1975')">1975</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1980')">1980</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1985')">1985</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1990')">1990</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1995')">1995</button>
-        <button class="tablinksJudCount active" onclick="tabsJudCount(event, 'jud_count_2000')">2000</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_2005')">2005</button>
-        <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_2010')">2010</button>
-    </div>
-
-    <!-- Tab content -->
-    <div id="jud_count_1945" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1945.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_1950" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1950.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_1955" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1955.html" type="text/html" width="100%" height="550">
-    </div>
-    
-    <div id="jud_count_1960" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1960.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_1965" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1965.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_1970" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1970.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_1975" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1975.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_1980" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1980.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_1985" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1985.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_1990" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1990.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_1995" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_1995.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_2000" class="tabcontentJudCount" style="display: block;">
-        <embed src="graphics/judaism/count/judaism_map_2000.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_2005" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_2005.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_count_2010" class="tabcontentJudCount" style="display: none;">
-        <embed src="graphics/judaism/count/judaism_map_2010.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <h2>
-        Percentage of Jews per country by year
-    </h2>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <div class="tab">
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1945')">1945</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1950')">1950</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1955')">1955</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1960')">1960</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1965')">1965</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1970')">1970</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1975')">1975</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1980')">1980</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1985')">1985</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1990')">1990</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1995')">1995</button>
-        <button class="tablinksJudPercent active" onclick="tabsJudPercent(event, 'jud_percent_2000')">2000</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_2005')">2005</button>
-        <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_2010')">2010</button>
-    </div>
-
-    <!-- Tab content -->
-    <div id="jud_percent_1945" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1945_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_1950" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1950_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_1955" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1955_percent.html" type="text/html" width="100%" height="550">
-    </div>
-    
-    <div id="jud_percent_1960" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1960_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_1965" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1965_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_1970" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1970_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_1975" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1975_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_1980" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1980_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_1985" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1985_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_1990" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1990_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_1995" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_1995_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_2000" class="tabcontentJudPercent" style="display: block;">
-        <embed src="graphics/judaism/percent/judaism_map_2000_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_2005" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_2005_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="jud_percent_2010" class="tabcontentJudPercent" style="display: none;">
-        <embed src="graphics/judaism/percent/judaism_map_2010_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <h2>
-        Number of Muslims per country by year
-    </h2>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <!-- Tab links -->
-    <div class="tab">
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1945')">1945</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1950')">1950</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1955')">1955</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1960')">1960</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1965')">1965</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1970')">1970</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1975')">1975</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1980')">1980</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1985')">1985</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1990')">1990</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1995')">1995</button>
-        <button class="tablinksIslmCount active" onclick="tabsIslmCount(event, 'islm_count_2000')">2000</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_2005')">2005</button>
-        <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_2010')">2010</button>
-    </div>
-
-    <!-- Tab content -->
-    <div id="islm_count_1945" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1945.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_1950" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1950.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_1955" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1955.html" type="text/html" width="100%" height="550">
-    </div>
-    
-    <div id="islm_count_1960" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1960.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_1965" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1965.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_1970" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1970.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_1975" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1975.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_1980" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1980.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_1985" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1985.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_1990" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1990.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_1995" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_1995.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_2000" class="tabcontentIslmCount" style="display: block;">
-        <embed src="graphics/islam/count/islam_map_2000.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_2005" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_2005.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_count_2010" class="tabcontentIslmCount" style="display: none;">
-        <embed src="graphics/islam/count/islam_map_2010.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <h2>
-        Percentage of Muslims per country by year
-    </h2>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <div class="tab">
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1945')">1945</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1950')">1950</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1955')">1955</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1960')">1960</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1965')">1965</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1970')">1970</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1975')">1975</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1980')">1980</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1985')">1985</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1990')">1990</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1995')">1995</button>
-        <button class="tablinksIslmPercent active" onclick="tabsIslmPercent(event, 'islm_percent_2000')">2000</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_2005')">2005</button>
-        <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_2010')">2010</button>
-    </div>
-
-    <!-- Tab content -->
-    <div id="islm_percent_1945" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1945_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_1950" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1950_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_1955" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1955_percent.html" type="text/html" width="100%" height="550">
-    </div>
-    
-    <div id="islm_percent_1960" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1960_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_1965" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1965_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_1970" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1970_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_1975" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1975_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_1980" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1980_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_1985" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1985_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_1990" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1990_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_1995" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_1995_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_2000" class="tabcontentIslmPercent" style="display: block;">
-        <embed src="graphics/islam/percent/islam_map_2000_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_2005" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_2005_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="islm_percent_2010" class="tabcontentIslmPercent" style="display: none;">
-        <embed src="graphics/islam/percent/islam_map_2010_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <h2>
-        Number of Buddhists per country by year
-    </h2>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <!-- Tab links -->
-    <div class="tab">
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1945')">1945</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1950')">1950</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1955')">1955</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1960')">1960</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1965')">1965</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1970')">1970</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1975')">1975</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1980')">1980</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1985')">1985</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1990')">1990</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1995')">1995</button>
-        <button class="tablinksBudCount active" onclick="tabsBudCount(event, 'bud_count_2000')">2000</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_2005')">2005</button>
-        <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_2010')">2010</button>
-    </div>
-
-    <!-- Tab content -->
-    <div id="bud_count_1945" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1945.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_1950" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1950.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_1955" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1955.html" type="text/html" width="100%" height="550">
-    </div>
-    
-    <div id="bud_count_1960" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1960.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_1965" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1965.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_1970" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1970.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_1975" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1975.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_1980" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1980.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_1985" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1985.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_1990" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1990.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_1995" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_1995.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_2000" class="tabcontentBudCount" style="display: block;">
-        <embed src="graphics/buddhism/count/buddhism_map_2000.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_2005" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_2005.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_count_2010" class="tabcontentBudCount" style="display: none;">
-        <embed src="graphics/buddhism/count/buddhism_map_2010.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <h2>
-        Percentage of Buddhist per country by year
-    </h2>
-    <hr>
-
-    <p>
-        This page is work in progress.
-    </p>
-
-    <div class="tab">
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1945')">1945</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1950')">1950</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1955')">1955</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1960')">1960</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1965')">1965</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1970')">1970</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1975')">1975</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1980')">1980</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1985')">1985</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1990')">1990</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1995')">1995</button>
-        <button class="tablinksBudPercent active" onclick="tabsBudPercent(event, 'bud_percent_2000')">2000</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_2005')">2005</button>
-        <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_2010')">2010</button>
-    </div>
-
-    <!-- Tab content -->
-    <div id="bud_percent_1945" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1945_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_1950" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1950_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_1955" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1955_percent.html" type="text/html" width="100%" height="550">
-    </div>
-    
-    <div id="bud_percent_1960" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1960_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_1965" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1965_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_1970" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1970_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_1975" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1975_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_1980" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1980_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_1985" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1985_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_1990" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1990_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_1995" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_1995_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_2000" class="tabcontentBudPercent" style="display: block;">
-        <embed src="graphics/buddhism/percent/buddhism_map_2000_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_2005" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_2005_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <div id="bud_percent_2010" class="tabcontentBudPercent" style="display: none;">
-        <embed src="graphics/buddhism/percent/buddhism_map_2010_percent.html" type="text/html" width="100%" height="550">
-    </div>
-
-    <script src="js/script.js"></script>
+    <article class="markdown-body">
+        <h1>
+            World Religion Data Visualization
+        </h1>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <h2>
+            Largest religion per country by year
+        </h2>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1945')">1945</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1950')">1950</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1955')">1955</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1960')">1960</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1965')">1965</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1970')">1970</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1975')">1975</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1980')">1980</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1985')">1985</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1990')">1990</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_1995')">1995</button>
+            <button class="tablinksGeneralLargest active" onclick="tabsGeneralLargest(event, 'general_largest_2000')">2000</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_2005')">2005</button>
+            <button class="tablinksGeneralLargest" onclick="tabsGeneralLargest(event, 'general_largest_2010')">2010</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="general_largest_1945" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1945.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_1950" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1950.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_1955" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1955.html" type="text/html" width="100%" height="550">
+        </div>
+        
+        <div id="general_largest_1960" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1960.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_1965" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1965.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_1970" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1970.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_1975" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1975.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_1980" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1980.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_1985" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1985.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_1990" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1990.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_1995" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_1995.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_2000" class="tabcontentGeneralLargest" style="display: block;">
+            <embed src="graphics/general/largest/largest_map_2000.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_2005" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_2005.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="general_largest_2010" class="tabcontentGeneralLargest" style="display: none;">
+            <embed src="graphics/general/largest/largest_map_2010.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <h2>
+            Number of Christians per country by year
+        </h2>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <div class="tab">
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1945')">1945</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1950')">1950</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1955')">1955</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1960')">1960</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1965')">1965</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1970')">1970</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1975')">1975</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1980')">1980</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1985')">1985</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1990')">1990</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_1995')">1995</button>
+            <button class="tablinksChrstCount active" onclick="tabsChrstCount(event, 'chrst_count_2000')">2000</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_2005')">2005</button>
+            <button class="tablinksChrstCount" onclick="tabsChrstCount(event, 'chrst_count_2010')">2010</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="chrst_count_1945" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1945.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_1950" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1950.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_1955" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1955.html" type="text/html" width="100%" height="550">
+        </div>
+        
+        <div id="chrst_count_1960" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1960.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_1965" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1965.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_1970" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1970.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_1975" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1975.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_1980" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1980.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_1985" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1985.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_1990" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1990.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_1995" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_1995.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_2000" class="tabcontentChrstCount" style="display: block;">
+            <embed src="graphics/christianity/count/christianity_map_2000.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_2005" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_2005.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_count_2010" class="tabcontentChrstCount" style="display: none;">
+            <embed src="graphics/christianity/count/christianity_map_2010.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <h2>
+            Percentage of Christians per country by year
+        </h2>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <div class="tab">
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1945')">1945</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1950')">1950</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1955')">1955</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1960')">1960</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1965')">1965</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1970')">1970</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1975')">1975</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1980')">1980</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1985')">1985</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1990')">1990</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_1995')">1995</button>
+            <button class="tablinksChrstPercent active" onclick="tabsChrstPercent(event, 'chrst_percent_2000')">2000</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_2005')">2005</button>
+            <button class="tablinksChrstPercent" onclick="tabsChrstPercent(event, 'chrst_percent_2010')">2010</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="chrst_percent_1945" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1945_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_1950" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1950_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_1955" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1955_percent.html" type="text/html" width="100%" height="550">
+        </div>
+        
+        <div id="chrst_percent_1960" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1960_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_1965" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1965_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_1970" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1970_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_1975" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1975_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_1980" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1980_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_1985" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1985_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_1990" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1990_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_1995" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_1995_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_2000" class="tabcontentChrstPercent" style="display: block;">
+            <embed src="graphics/christianity/percent/christianity_map_2000_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_2005" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_2005_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="chrst_percent_2010" class="tabcontentChrstPercent" style="display: none;">
+            <embed src="graphics/christianity/percent/christianity_map_2010_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <h2>
+            Number of Jews per country by year
+        </h2>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1945')">1945</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1950')">1950</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1955')">1955</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1960')">1960</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1965')">1965</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1970')">1970</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1975')">1975</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1980')">1980</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1985')">1985</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1990')">1990</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_1995')">1995</button>
+            <button class="tablinksJudCount active" onclick="tabsJudCount(event, 'jud_count_2000')">2000</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_2005')">2005</button>
+            <button class="tablinksJudCount" onclick="tabsJudCount(event, 'jud_count_2010')">2010</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="jud_count_1945" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1945.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_1950" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1950.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_1955" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1955.html" type="text/html" width="100%" height="550">
+        </div>
+        
+        <div id="jud_count_1960" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1960.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_1965" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1965.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_1970" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1970.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_1975" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1975.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_1980" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1980.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_1985" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1985.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_1990" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1990.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_1995" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_1995.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_2000" class="tabcontentJudCount" style="display: block;">
+            <embed src="graphics/judaism/count/judaism_map_2000.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_2005" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_2005.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_count_2010" class="tabcontentJudCount" style="display: none;">
+            <embed src="graphics/judaism/count/judaism_map_2010.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <h2>
+            Percentage of Jews per country by year
+        </h2>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <div class="tab">
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1945')">1945</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1950')">1950</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1955')">1955</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1960')">1960</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1965')">1965</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1970')">1970</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1975')">1975</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1980')">1980</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1985')">1985</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1990')">1990</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_1995')">1995</button>
+            <button class="tablinksJudPercent active" onclick="tabsJudPercent(event, 'jud_percent_2000')">2000</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_2005')">2005</button>
+            <button class="tablinksJudPercent" onclick="tabsJudPercent(event, 'jud_percent_2010')">2010</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="jud_percent_1945" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1945_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_1950" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1950_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_1955" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1955_percent.html" type="text/html" width="100%" height="550">
+        </div>
+        
+        <div id="jud_percent_1960" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1960_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_1965" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1965_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_1970" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1970_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_1975" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1975_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_1980" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1980_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_1985" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1985_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_1990" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1990_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_1995" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_1995_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_2000" class="tabcontentJudPercent" style="display: block;">
+            <embed src="graphics/judaism/percent/judaism_map_2000_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_2005" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_2005_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="jud_percent_2010" class="tabcontentJudPercent" style="display: none;">
+            <embed src="graphics/judaism/percent/judaism_map_2010_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <h2>
+            Number of Muslims per country by year
+        </h2>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1945')">1945</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1950')">1950</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1955')">1955</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1960')">1960</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1965')">1965</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1970')">1970</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1975')">1975</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1980')">1980</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1985')">1985</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1990')">1990</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_1995')">1995</button>
+            <button class="tablinksIslmCount active" onclick="tabsIslmCount(event, 'islm_count_2000')">2000</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_2005')">2005</button>
+            <button class="tablinksIslmCount" onclick="tabsIslmCount(event, 'islm_count_2010')">2010</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="islm_count_1945" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1945.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_1950" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1950.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_1955" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1955.html" type="text/html" width="100%" height="550">
+        </div>
+        
+        <div id="islm_count_1960" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1960.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_1965" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1965.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_1970" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1970.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_1975" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1975.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_1980" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1980.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_1985" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1985.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_1990" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1990.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_1995" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_1995.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_2000" class="tabcontentIslmCount" style="display: block;">
+            <embed src="graphics/islam/count/islam_map_2000.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_2005" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_2005.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_count_2010" class="tabcontentIslmCount" style="display: none;">
+            <embed src="graphics/islam/count/islam_map_2010.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <h2>
+            Percentage of Muslims per country by year
+        </h2>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <div class="tab">
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1945')">1945</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1950')">1950</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1955')">1955</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1960')">1960</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1965')">1965</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1970')">1970</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1975')">1975</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1980')">1980</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1985')">1985</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1990')">1990</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_1995')">1995</button>
+            <button class="tablinksIslmPercent active" onclick="tabsIslmPercent(event, 'islm_percent_2000')">2000</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_2005')">2005</button>
+            <button class="tablinksIslmPercent" onclick="tabsIslmPercent(event, 'islm_percent_2010')">2010</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="islm_percent_1945" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1945_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_1950" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1950_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_1955" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1955_percent.html" type="text/html" width="100%" height="550">
+        </div>
+        
+        <div id="islm_percent_1960" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1960_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_1965" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1965_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_1970" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1970_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_1975" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1975_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_1980" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1980_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_1985" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1985_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_1990" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1990_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_1995" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_1995_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_2000" class="tabcontentIslmPercent" style="display: block;">
+            <embed src="graphics/islam/percent/islam_map_2000_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_2005" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_2005_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="islm_percent_2010" class="tabcontentIslmPercent" style="display: none;">
+            <embed src="graphics/islam/percent/islam_map_2010_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <h2>
+            Number of Buddhists per country by year
+        </h2>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1945')">1945</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1950')">1950</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1955')">1955</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1960')">1960</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1965')">1965</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1970')">1970</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1975')">1975</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1980')">1980</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1985')">1985</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1990')">1990</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_1995')">1995</button>
+            <button class="tablinksBudCount active" onclick="tabsBudCount(event, 'bud_count_2000')">2000</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_2005')">2005</button>
+            <button class="tablinksBudCount" onclick="tabsBudCount(event, 'bud_count_2010')">2010</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="bud_count_1945" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1945.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_1950" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1950.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_1955" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1955.html" type="text/html" width="100%" height="550">
+        </div>
+        
+        <div id="bud_count_1960" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1960.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_1965" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1965.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_1970" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1970.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_1975" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1975.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_1980" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1980.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_1985" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1985.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_1990" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1990.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_1995" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_1995.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_2000" class="tabcontentBudCount" style="display: block;">
+            <embed src="graphics/buddhism/count/buddhism_map_2000.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_2005" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_2005.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_count_2010" class="tabcontentBudCount" style="display: none;">
+            <embed src="graphics/buddhism/count/buddhism_map_2010.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <h2>
+            Percentage of Buddhist per country by year
+        </h2>
+        <hr>
+
+        <p>
+            This page is work in progress.
+        </p>
+
+        <div class="tab">
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1945')">1945</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1950')">1950</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1955')">1955</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1960')">1960</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1965')">1965</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1970')">1970</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1975')">1975</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1980')">1980</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1985')">1985</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1990')">1990</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_1995')">1995</button>
+            <button class="tablinksBudPercent active" onclick="tabsBudPercent(event, 'bud_percent_2000')">2000</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_2005')">2005</button>
+            <button class="tablinksBudPercent" onclick="tabsBudPercent(event, 'bud_percent_2010')">2010</button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="bud_percent_1945" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1945_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_1950" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1950_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_1955" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1955_percent.html" type="text/html" width="100%" height="550">
+        </div>
+        
+        <div id="bud_percent_1960" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1960_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_1965" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1965_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_1970" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1970_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_1975" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1975_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_1980" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1980_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_1985" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1985_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_1990" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1990_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_1995" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_1995_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_2000" class="tabcontentBudPercent" style="display: block;">
+            <embed src="graphics/buddhism/percent/buddhism_map_2000_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_2005" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_2005_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <div id="bud_percent_2010" class="tabcontentBudPercent" style="display: none;">
+            <embed src="graphics/buddhism/percent/buddhism_map_2010_percent.html" type="text/html" width="100%" height="550">
+        </div>
+
+        <script src="js/script.js"></script>
+    </article>
 </body>
 </html>
