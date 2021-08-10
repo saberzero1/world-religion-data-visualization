@@ -28,6 +28,11 @@
             World Religion Data Visualization
         </h1>
         <hr>
+        <pre>
+            <code class="language-python">
+def f(x)
+return x</code>
+        </pre>
 
         <p>
             This page is work in progress.
@@ -39,8 +44,26 @@
         <hr>
 
         <p>
-            This page is work in progress.
+            Code to get the figure below:
         </p>
+
+        <pre>
+<code class="language-python">def f(x):
+    national_stats_highest = national_stats[["chrstgenpct", "judgenpct", "islmgenpct", "budgenpct", "hindgenpct", "zorogenpct", "hindgenpct", "sikhgenpct", "shntgenpct", "bahgenpct", "taogenpct", "jaingenpct", "confgenpct", "syncgenpct", "anmgenpct", "nonreligpct", "othrgenpct"]]
+    max_value_national_inter = national_stats_highest.idxmax(axis=1, skipna=True)
+    max_value_national = pd.concat([national_stats, max_value_national_inter], axis=1, join="inner").rename(columns={0:"Largest religion"}).sort_values("Largest religion").query("year==@x")
+    max_value_national
+    fig = px.choropleth(max_value_national, locations="ISO",
+                        color="Largest religion",
+                        hover_name="StateAbb",
+                        hover_data=["chrstgenpct", "judgenpct", "islmgenpct", "budgenpct", "hindgenpct", "zorogenpct", "hindgenpct", "sikhgenpct", "shntgenpct", "bahgenpct", "taogenpct", "jaingenpct", "confgenpct", "syncgenpct", "anmgenpct", "nonreligpct", "othrgenpct"],
+                        color_continuous_scale=px.colors.sequential.YlGnBu,
+                        width=1000, height=500)
+    # pxoff.plot(fig, filename=f"largest_map_{x}.html")
+    fig.show()
+w = widgets.interactive(f, x=widgets.IntSlider(min=1945, max=2010, step=5, value=2000, description="Year:"));
+display(w)</code>
+        </pre>
 
         <!-- Tab links -->
         <div class="tab">
@@ -785,6 +808,7 @@
         </div>
 
         <script src="js/script.js"></script>
+        <script>hljs.highlightAll();</script>
     </article>
 </body>
 </html>
