@@ -13144,6 +13144,7 @@ div#notebook {
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 <span class="kn">import</span> <span class="nn">plotly.offline</span> <span class="k">as</span> <span class="nn">pxoff</span>
+<span class="kn">import</span> <span class="nn">nbinteract</span>
 
 <span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
 <span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
@@ -16030,8 +16031,8 @@ Finished generating distribution charts.
     }
 
     var interact = new window.NbInteract({
-      spec: 'saberzero1/world-religion-data-visualization/HEAD?filepath=index.ipynb',
-      baseUrl: 'https://mybinder.org/v2',
+      spec: 'saberzero1/world-religion-data-visualization/main',
+      baseUrl: 'https://mybinder.org',
       provider: 'gh',
     })
     interact.prepare()
