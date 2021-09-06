@@ -6,3 +6,4 @@ matplotlib==3.4.2
 ipywidgets==7.6.3
 jupyter_contrib_nbextensions==0.5.1
 plotly==5.1.0
+nbinteract==0.2.6
